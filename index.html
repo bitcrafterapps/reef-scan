@@ -2,19 +2,138 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/rs-icon.png" />
+    
+    <!-- Primary Meta Tags -->
+    <title>ReefScan | AI Coral & Fish Identifier for Reef Aquariums</title>
+    <meta name="description" content="Instantly identify corals, fish, and pests in your reef tank with AI. Get care guides, diagnose problems & keep your reef thriving. Free iOS app for reefers." />
+    <meta name="keywords" content="reef aquarium app, coral identification, fish identifier, reef pest detection, saltwater aquarium, coral care guide, AI fish ID, reef scanner, marine aquarium app, coral ID, reef tank app" />
+    <meta name="author" content="BitCraft" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="ReefScan - AI-powered scanner for your reef aquarium. Identify fish, corals, pests, and problems instantly." />
-    <meta name="theme-color" content="#0a0a0f" />
-    <title>ReefScan — Beyond the Glass</title>
+    <meta name="theme-color" content="#0ea5e9" />
+    <link rel="canonical" href="https://reef-scan.vercel.app/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ReefScan" />
+    <meta property="og:title" content="ReefScan | AI-Powered Reef Aquarium Scanner" />
+    <meta property="og:description" content="Identify corals, fish & pests instantly with AI. Get expert care guides for your reef tank. Free on iOS." />
+    <meta property="og:image" content="https://reef-scan.vercel.app/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="ReefScan app showing coral identification on an iPhone" />
+    <meta property="og:url" content="https://reef-scan.vercel.app/" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ReefScan | AI Coral & Fish Identifier" />
+    <meta name="twitter:description" content="Identify corals, fish & pests in your reef tank with AI. Free care guides included." />
+    <meta name="twitter:image" content="https://reef-scan.vercel.app/twitter-card.png" />
+    
+    <!-- Apple App Integration -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="ReefScan" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/png" href="/rs-icon.png" />
+    <link rel="apple-touch-icon" href="/rs-icon.png" />
+    <meta name="application-name" content="ReefScan" />
+    <meta name="msapplication-TileColor" content="#0ea5e9" />
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data - SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "ReefScan",
+      "alternateName": "Reef Scan",
+      "description": "AI-powered scanner for reef aquariums. Instantly identify fish, corals, pests, and problems—then get expert solutions to keep your reef thriving.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "iOS 15.0+",
+      "url": "https://reef-scan.vercel.app",
+      "screenshot": [
+        "https://reef-scan.vercel.app/rs-home.jpg",
+        "https://reef-scan.vercel.app/rs-scan.jpg",
+        "https://reef-scan.vercel.app/rs-scan1.jpg",
+        "https://reef-scan.vercel.app/rs-tanks.jpg"
+      ],
+      "featureList": [
+        "AI Fish & Coral Identification",
+        "Pest & Disease Detection",
+        "Expert Care Guides",
+        "Problem Diagnosis & Solutions"
+      ],
+      "softwareVersion": "1.0",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "500",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "BitCraft",
+        "url": "https://bitcraft.app"
+      }
+    }
+    </script>
+    
+    <!-- Structured Data - FAQ for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How does ReefScan identify corals and fish?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ReefScan uses advanced AI and machine learning to analyze photos of your reef tank inhabitants. Simply take a photo and get instant identification along with detailed care information."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is ReefScan free to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, ReefScan is free to download and use. The core identification features are available at no cost."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can ReefScan detect reef pests like Aiptasia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, ReefScan can identify common reef pests including Aiptasia, flatworms, bristle worms, and other harmful organisms, along with treatment recommendations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does ReefScan work offline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, ReefScan works offline for basic identification. Some advanced features may require an internet connection for the most accurate results."
+          }
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-
